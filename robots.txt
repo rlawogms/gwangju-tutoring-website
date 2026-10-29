@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gwangju-tutoring.co.kr/sitemap.xml
