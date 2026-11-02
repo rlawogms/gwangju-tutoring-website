@@ -860,6 +860,11 @@ document.addEventListener('click', function(e) {
           <input type="tel" id="wmPhone" placeholder="010-0000-0000" required />
         </div>
         <input type="text" id="wmSchool" placeholder="학교명 (예: OO초등학교)" required />
+        <select id="wmGender" required>
+          <option value="" disabled selected>성별 선택</option>
+          <option>남학생</option>
+          <option>여학생</option>
+        </select>
         <select id="wmRegion" required>
           <option value="" disabled selected>지역 선택</option>
           <option>광주광역시 광산구</option>
@@ -948,6 +953,7 @@ document.addEventListener('click', function(e) {
           '학생 이름': document.getElementById('wmName').value,
           '학부모 연락처': document.getElementById('wmPhone').value,
           '학교명': document.getElementById('wmSchool').value,
+          '성별': document.getElementById('wmGender').value,
           '학년': selectedGrade,
           '희망 과목': wmSubject,
           '수업 방식': document.getElementById('wmMode').value,
